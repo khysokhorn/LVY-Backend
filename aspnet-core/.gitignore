@@ -6,10 +6,10 @@
 *.user
 *.userosscache
 *.sln.docstates
-
+mssql_data
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
-
+database-design.pdf
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
