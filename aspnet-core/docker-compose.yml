@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  mssql:
+    image: mcr.microsoft.com/azure-sql-edge:latest # Use Azure SQL Edge for ARM64
+    container_name: mssql_server
+    platform: linux/arm64/v8 # Specify the platform for ARM64
+    ports:
+      - "1433:1433" # Expose the default SQL Server port
+    environment:
+      ACCEPT_EULA: "Y" # Accept the SQL Server EULA
+      SA_PASSWORD: "admin@123" # Replace with a strong password
+    volumes:
+      - ./mssql_data:/var/opt/mssql # Persist data in a Docker volume
+volumes:
+  mssql_data:
+    driver: local
