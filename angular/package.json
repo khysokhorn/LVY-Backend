@@ -37,7 +37,7 @@
     "push.js": "1.0.12",
     "rtl-detect": "^1.1.2",
     "rxjs": "^7.8.1",
-    "sweetalert2": "^11.12.2",
+    "sweetalert2": "^11.22.4",
     "ts-helpers": "^1.1.2",
     "tslib": "^2.6.3"
   },
